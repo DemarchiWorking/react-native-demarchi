@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "demarchimobile",
+    "slug": "demarchimobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/svg/logo.svg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/imagens/dmrc.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

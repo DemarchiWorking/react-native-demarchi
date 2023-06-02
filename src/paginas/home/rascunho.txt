@@ -1,0 +1,51 @@
+import { View, Text, Button, TouchableOpacity } from "react-native";
+import { ToggleTheme } from "../../componentes/ToggleTheme";
+import { NavigationProp } from "@react-navigation/native";
+
+import { Ionicons } from '@expo/vector-icons';
+
+export function Home(props : any) {
+
+  return (
+    <View className="flex-1 dark:bg-slate-800 light:bg-white items-center justify-center">
+
+      <ToggleTheme></ToggleTheme>
+      <Text className="text-yellow-900 text-2xl font-bold mt-4">Open up!</Text>
+     
+      <TouchableOpacity className='bg-purple-600 rounded border-purple-600 dark:bg-gray-800'>
+      <Text className='text-white font-bold py-2 px-4'>Botão</Text>
+    </TouchableOpacity>
+    <TouchableOpacity className='bg-white-600 rounded border-purple-600 dark:bg-gray-800'>
+    <Ionicons name="briefcase" size={30} color="#555"/>    
+    <Ionicons name="search" size={30} color="#555"/>
+
+    </TouchableOpacity>
+
+    </View>
+  );
+}
+
+
+
+//
+
+  return (
+  <View style={styleCss.container3}>
+
+
+  <Text style={{fontSize: 30, paddingBottom: 30}}> Qual sua busca ? </Text> 
+
+    <View style={styleCss.container2}>
+          <TouchableOpacity onPress={() => props.navigation.navigate('Login')} style={{ padding: 30, borderWidth: 1, borderColor: 'black' }}>
+          <Ionicons name="briefcase" size={100} color="#555"/>   
+          <Text> Trabalho </Text> 
+          </TouchableOpacity>
+
+
+          <TouchableOpacity onPress={() => props.navigation.navigate('Login')} style={{ padding: 30 , borderWidth: 1, borderColor: 'black' }}>
+          <Ionicons name="search" size={100} color="#555"/> 
+          <Text> Recrutamento </Text> 
+          </TouchableOpacity>
+    </View>
+  </View>
+  );
